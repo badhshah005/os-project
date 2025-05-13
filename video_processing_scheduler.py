@@ -63,8 +63,8 @@ for v in videos:
 
 print("-"*65)
 
-avg_tat = sum(v["turnaround_time"] for p in videos) / n
-avg_wt = sum(v["waiting_time"] for p in videos) / n
+avg_tat = sum(v["turnaround_time"] for v in videos) / n
+avg_wt = sum(v["waiting_time"] for v in videos) / n
 
 print(f"\nAverage Turnaround Time: {avg_tat:.2f}")
 print(f"Average Waiting Time: {avg_wt:.2f}")
